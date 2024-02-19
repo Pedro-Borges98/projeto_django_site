@@ -7,5 +7,6 @@ class Fotografia(models.Model):
     descricao = models.TextField(null = False, blank = False)
     foto      = models.CharField(max_length = 100,null = False, blank = False)
 
+    # modelo que retorna o nome da fotografia em si para o front
     def __str__(self):
         return f"Fotografia [nome={self.nome}]"
